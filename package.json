@@ -1,0 +1,38 @@
+{
+  "name": "mars-rover-v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec src/index.js",
+    "babel-public": "babel src-public-scripts --watch --source-maps-inline --out-dir public/scripts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iqdavidh/mars-rover-v3.git"
+  },
+  "keywords": [],
+  "author": "davidh <david@productividadti.com.mx> (productividadti.com.mx)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iqdavidh/mars-rover-v3/issues"
+  },
+  "homepage": "https://github.com/iqdavidh/mars-rover-v3#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  }
+}
