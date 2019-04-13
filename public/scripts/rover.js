@@ -127,7 +127,7 @@ function (_ElementoMapa) {
         }
       } else {
         //cambia la direccion
-        this.direccion = this.getNewDireccion(this.direccion, tipoMovimiento);
+        this.direccion = this.getNewDirection(this.direccion, tipoMovimiento);
       }
 
       if (this.isVerbose) {

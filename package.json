@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --exec src/index.js",
     "babel-public": "babel src-public-scripts --watch --source-maps-inline --out-dir public/scripts",
-    "t-rover": "jasmine   ./src-public-scripts-test/rover_test.js ",
+    "t-rover": "jasmine   ./spec/RoverSpec.js ",
     "t-all": "jasmine"
   },
   "repository": {
