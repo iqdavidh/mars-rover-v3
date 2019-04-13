@@ -53,8 +53,8 @@ function (_ElementoMapa) {
   }
 
   _createClass(Rover, [{
-    key: "getNewDirection",
-    value: function getNewDirection(direccionActual, tipoMovimiento) {
+    key: "getNewDireccion",
+    value: function getNewDireccion(direccionActual, tipoMovimiento) {
       var listaDireccion = ['W', 'N', 'E', 'S'];
 
       if (tipoMovimiento === 'forward' || tipoMovimiento === 'backward') {
@@ -127,7 +127,7 @@ function (_ElementoMapa) {
         }
       } else {
         //cambia la direccion
-        this.direccion = this.getNewDirection(this.direccion, tipoMovimiento);
+        this.direccion = this.getNewDireccion(this.direccion, tipoMovimiento);
       }
 
       if (this.isVerbose) {

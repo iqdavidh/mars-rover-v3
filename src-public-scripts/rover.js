@@ -27,7 +27,7 @@ class Rover extends ElementoMapa {
         this.isVerbose = true;
     }
 
-    getNewDirection(direccionActual, tipoMovimiento) {
+    getNewDireccion(direccionActual, tipoMovimiento) {
         let listaDireccion = ['W', 'N', 'E', 'S'];
 
         if (tipoMovimiento === 'forward' || tipoMovimiento === 'backward') {
@@ -110,7 +110,7 @@ class Rover extends ElementoMapa {
 
         } else {
             //cambia la direccion
-            this.direccion = this.getNewDirection(this.direccion, tipoMovimiento);
+            this.direccion = this.getNewDireccion(this.direccion, tipoMovimiento);
         }
 
         if (this.isVerbose) {
