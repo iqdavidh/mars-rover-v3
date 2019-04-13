@@ -228,3 +228,11 @@ function (_ElementoMapa) {
 
   return Rover;
 }(ElementoMapa);
+
+if (module && module.exports) {
+  module.exports = {
+    factory: function factory(nombre, xinicio, yinicio, direccionInicial) {
+      return new Rover(nombre, xinicio, yinicio, direccionInicial);
+    }
+  };
+}

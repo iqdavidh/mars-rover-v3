@@ -57,7 +57,6 @@ class Rover extends ElementoMapa {
         return listaDireccion[newIndex];
     }
 
-
     validarMovimiento(movimiento) {
 
         let listaMovPermitidos = ['forward', 'backward', 'turnLeft', 'turnRight'];
@@ -178,9 +177,9 @@ class Rover extends ElementoMapa {
     };
 
 
-    randomPosicion () {
+    randomPosicion() {
 
-        let n1 =  parseInt(Math.random() * 20 + -10);
+        let n1 = parseInt(Math.random() * 20 + -10);
         let n2 = parseInt(Math.random() * 20 + -10);
 
 
@@ -204,7 +203,7 @@ class Rover extends ElementoMapa {
 
     };
 
-    setRandomColor(){
+    setRandomColor() {
 
         let n1 = Math.random() * 255;
         let n2 = Math.random() * 255;
@@ -216,3 +215,10 @@ class Rover extends ElementoMapa {
 
 }
 
+if (module && module.exports) {
+    module.exports = {
+        factory: function (nombre, xinicio, yinicio, direccionInicial) {
+            return new Rover(nombre, xinicio, yinicio, direccionInicial);
+        }
+    };
+}
